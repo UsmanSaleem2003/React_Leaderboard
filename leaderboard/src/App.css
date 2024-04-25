@@ -1,0 +1,66 @@
+.leaderboard{
+    width: 800px;
+    height: 550px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow-y: scroll;
+}
+
+.headings{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: rgb(247, 250, 253);
+    border-bottom: 2px solid orange;
+}
+
+.leaderboard-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+.leaderboard-body:nth-child(odd) {
+    background-color: rgb(253, 241, 241);
+}
+
+.team-profile-data{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.rank-img{
+    margin-right: -40px;
+}
+
+.rank-number{
+    padding-left: 20px;
+    margin-right: -20px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(119, 119, 119);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(241, 241, 241);
+}
