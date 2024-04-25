@@ -19,6 +19,7 @@ const teamSchema = new mongoose.Schema({
     name: { type: String },
     gamesPlayed: { type: Number },
     score: { type: Number },
+    image: { type: String }
 });
 
 const Team = mongoose.model("Team", teamSchema);
@@ -51,17 +52,15 @@ async function populateTeams() {
             dummyTeams.push({
                 rank: i,
                 name: `Team ${i}`,
-                gamesPlayed: Math.floor(Math.random() * 100), // Random number of games played
-                score: Math.floor(Math.random() * 50000) // Random score
+                gamesPlayed: Math.floor(Math.random() * 100),
+                score: Math.floor(Math.random() * 50000),
+                image: `/assets/team${i}.png`
             });
         }
 
-        // Insert the dummy data into the database
         await Team.insertMany(dummyTeams);
         console.log("Data inserted successfully");
-        // mongoose.connection.close(); // Close the connection after insertion
     } catch (error) {
         console.error("Error populating teams:", error);
-        // mongoose.connection.close(); // Close the connection in case of error
     }
 }

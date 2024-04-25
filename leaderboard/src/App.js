@@ -61,7 +61,7 @@ function App() {
               {rankImage && <img src={rankImage} alt="team-ranking" className="rank-img" />}
               {!rankImage && <p className="rank-number">{team.rank}</p>}
               <div className="team-profile-data">
-                <img src={teamsPic} alt="team-profile" className="profile-img" />
+                <img src={team.image} alt="team-profile" className="profile-img" />
                 <p>{team.name}</p>
               </div>
               <p>{team.gamesPlayed}</p>
