@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import './App.css';
-import teamsPic from "./components/assets/team.png";
 import firstPlaceImage from "./components/assets/firstPlaceImage.jpeg";
 import secondPlaceImage from "./components/assets/secondPlaceImage.jpeg";
 import thirdPlaceImage from "./components/assets/thirdPlaceImage.jpg";

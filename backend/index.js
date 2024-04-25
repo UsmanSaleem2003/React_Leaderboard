@@ -30,7 +30,7 @@ app.get("/", function (req, res) {
 
 app.get("/getTeams", async (req, res) => {
     const teamsData = await Team.find({});
-    console.log(teamsData);
+    //console.log(teamsData);
 
     if (teamsData) {
         res.status(200).send(teamsData);
